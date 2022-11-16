@@ -1,13 +1,13 @@
 body {
-  min-height: 100vh;
+  background-image: linear-gradient(to bottom, white, white, white, #ffcd9f);
+  overflow-x: hidden;
 }
-
 body section{
   min-height: 100vh;
   display: grid;
 }
 
-#bio {
+#bio, #education {
   grid-template-columns: auto 35% 35% auto;
   grid-template-rows: auto 70% auto;
   grid-column-gap: 5%;
@@ -16,6 +16,7 @@ body section{
   #bio > div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   #me-photo{
@@ -32,5 +33,81 @@ body section{
     width: 100%;
     position: absolute;
     z-index: 1;
-    background-image: linear-gradient(to right, white, transparent, transparent, transparent, transparent, #ffffff);
+    background-image: linear-gradient(to right, transparent, transparent, transparent, transparent, transparent, #ffffff);
+  }
+
+  #education > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #open-logo {
+    grid-area: 2 / 2;
+  }
+
+  #education .details {
+    grid-area: 2 / 3;
+  }
+
+
+
+  .portfolio {
+    grid-template-rows: 15% 70% auto;
+    grid-template-columns: auto 40% 40% 15%;
+    grid-row-gap: 2%;
+  }
+
+  .portfolio > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio .portfolio-header {
+    grid-area: 1 / 2;
+    align-items: center;
+  }
+
+  .portfolio-header img {
+    width: 50%;
+    height: auto;
+  }
+
+  .portfolio .details {
+    grid-area: 2 / 2;
+    flex-direction: column;
+  }
+
+  .portfolio .images {
+    grid-area: 2 / 3;
+
+  }
+
+  .portfolio .tech-stack {
+    grid-area: 2 / 4;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 3vw;
+  }
+
+  footer {
+  /*  position: -webkit-sticky;
+    position: sticky;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, white, white, #ffffffaa, transparent);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+  footer > div {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
   }
