@@ -108,9 +108,6 @@ footer > div {
   flex-direction: column;
 }
 
-.portfolio .images {
-}
-
 .tech-stack {
   justify-content: space-between;
 }
@@ -160,10 +157,6 @@ footer > div {
       display:block;
       background-image: linear-gradient(to right, transparent, transparent, transparent, transparent, transparent, #ffffff);
     }
-
-    #education > div {
-    }
-
     #open-logo {
       grid-area: 2 / 2;
     }
