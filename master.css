@@ -273,7 +273,7 @@ footer > div {
 }
 
 #cv {
-  
+  display: none;
   cursor: pointer;
 }
 
