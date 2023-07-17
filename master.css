@@ -4,7 +4,7 @@
   background-image: linear-gradient(to bottom, white, transparent);
   position: fixed;
   top: 0;
-  height: 3em;
+  height: 1em;
   width: 100%;
   z-index: 2;
 
@@ -229,6 +229,11 @@ footer > div {
       justify-content: space-around;
       align-items: flex-end;
     }
+
+    footer div * {
+      padding: 20px;
+    }
+
     #contact {
       display: flex;
     }
@@ -265,4 +270,13 @@ footer > div {
   top: 5px;
   right: 5px;
   cursor: pointer;
+}
+
+#cv {
+  
+  cursor: pointer;
+}
+
+#cv:hover {
+  background-color: lightgray;
 }
