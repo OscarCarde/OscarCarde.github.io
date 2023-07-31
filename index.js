@@ -1,4 +1,11 @@
+const inactive = true;
+
 document.addEventListener('DOMContentLoaded', () => {
+  if(inactive) {
+    let in_construction = document.createElement('h1');
+    in_construction.innerHTML = "In Construction ...";
+    document.querySelector("body").replaceChildren(in_construction);
+  }
     document.querySelector("#cv").addEventListener('click', ()=>openModal());
     document.querySelector(".close").addEventListener('click', () =>closeModal());
     window.addEventListener('click', event => {
